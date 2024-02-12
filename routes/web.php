@@ -13,6 +13,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/WelcomeToLaravel', function () {
     return view('welcome');
+});
+Route::get('/', function () {
+    echo'Homepage';
+});
+Route::get('/product', function () {
+    echo 'Liste des produits';
+});
+Route::get('/product/{id}', function () {
+    echo 'Fiche produit du produit {id}';
+});
+Route::get('/cart', function () {
+    echo 'Panier';
 });
